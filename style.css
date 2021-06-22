@@ -32,8 +32,9 @@ body {
     top: -50%;
 }
 
-.porgress {
+.progress {
     height: 0.5rem;
-    border-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem; 
     background: black;
 }

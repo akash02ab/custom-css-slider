@@ -22,8 +22,10 @@ const mousemovehandler = (e) => {
     
     if(currentX >= 0 && currentX < (progressbar.offsetWidth - thumb.clientWidth)) {
         thumb.style.left = currentX + "px";
+        progress.style.width = thumb.offsetLeft + "px";
         let percentage = Math.floor(thumb.offsetLeft / (progressbar.clientWidth - thumb.clientWidth - 2) * 100);
-        value.innerText = `Value: ${percentage}%`
+        value.innerText = `Value: ${percentage}%`;
+
     }
     
     x = e.clientX;
